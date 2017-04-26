@@ -9,7 +9,7 @@ Messenger bots của facebook ra cũng khá lâu rồi. Đã có nhiều ngườ
 
 Kiểu này:
 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.43.47%20PM.png_tigvw7dimg)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.43.47%20PM.png_tigvw7dimg" class="img-center" />
 
 Những thứ bạn cần có:
 
@@ -20,7 +20,7 @@ Những thứ bạn cần có:
 # Facebook stuffs
 Đầu tiên bạn vào https://developers.facebook.com và chọn app của mình.
 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.49.49%20PM.png_bectpu8v2e)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.49.49%20PM.png_bectpu8v2e" class="img-center" title="Steve Francia" />
 
 Ở tab bên trái các bạn `Add Product`. Chọn `Webhooks`, và `New Subscription` và chọn `Page` ở dropdown. Sẽ hiện ra cái popup như này:
 
