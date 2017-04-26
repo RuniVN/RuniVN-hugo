@@ -8,6 +8,7 @@ title = "go facebook bot"
 Messenger bots của facebook ra cũng khá lâu rồi. Đã có nhiều người sử dụng cho page facebook của mình. Bài này của mình sẽ hướng dẫn các bạn viết 1 con bot tự động trả lời theo pattern có sẵn bằng Go - cho server và ngrok - để publish localhost ra ngoài.
 
 Kiểu này:
+
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.43.47%20PM.png_tigvw7dimg)
 
 Những thứ bạn cần có:
@@ -18,6 +19,7 @@ Những thứ bạn cần có:
 
 # Facebook stuffs
 Đầu tiên bạn vào https://developers.facebook.com và chọn app của mình.
+
 ![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.49.49%20PM.png_bectpu8v2e)
 
 Ở tab bên trái các bạn `Add Product`. Chọn `Webhooks`, và `New Subscription` và chọn `Page` ở dropdown. Sẽ hiện ra cái popup như này:
