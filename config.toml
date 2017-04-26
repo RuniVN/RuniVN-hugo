@@ -1,3 +1,6 @@
-baseurl = "http://example.org/"
+baseurl = "www.runikitkat.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Runi blog"
+theme = "hugo-theme-crisp"
+
+
