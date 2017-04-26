@@ -1,4 +1,4 @@
-baseurl = "www.runikitkat.com"
+baseurl = ""
 languageCode = "en-us"
 title = "Runi blog"
 theme = "hugo-theme-crisp"
