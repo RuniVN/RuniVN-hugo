@@ -1,7 +1,7 @@
 +++
 draft = false
-date = "2017-04-26T16:45:32+07:00"
-title = "go facebook bot"
+date = "2016-08-18T16:45:32+07:00"
+title = "Viết một facebook messenger bot đơn giản cùng Go + ngrok"
 
 +++
 
@@ -20,11 +20,11 @@ Những thứ bạn cần có:
 # Facebook stuffs
 Đầu tiên bạn vào https://developers.facebook.com và chọn app của mình.
 
-<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.49.49%20PM.png_bectpu8v2e" class="img-center" title="Steve Francia" />
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.49.49%20PM.png_bectpu8v2e" class="img-center"/>
 
 Ở tab bên trái các bạn `Add Product`. Chọn `Webhooks`, và `New Subscription` và chọn `Page` ở dropdown. Sẽ hiện ra cái popup như này:
 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.51.56%20PM.png_4suocqh1zi)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%201.51.56%20PM.png_4suocqh1zi" class="img-center"/>
 
 Ở đây mình chỉ chọn subscription field là `messages`.
 
@@ -165,7 +165,7 @@ ngrok http 8085
 ```
 Sẽ được như này:
 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%202.39.47%20PM.png_95j7zf1bgb)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%202.39.47%20PM.png_95j7zf1bgb" class="img-center"/>
 
 `localhost:8085` đã được ngrok chuyển thành `https` và publish ra bên ngoài.
 
@@ -174,8 +174,7 @@ Sẽ được như này:
 
 Mọi thứ gần như đã xong. Các bạn chỉ cần paste callback URL đã được forward bởi ngrok vào popup của facebook lúc nãy, điền verify token là xong rồi.
 
-
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%202.43.19%20PM.png_oe8usmiac8)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/Screen%20Shot%202016-07-08%20at%202.43.19%20PM.png_oe8usmiac8" class="img-center"/>
 
 Như vậy là các bạn có thể pm facebook page chat thử và chờ response.
 
