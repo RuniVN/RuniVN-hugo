@@ -7,7 +7,8 @@ title = "Goroutine under the hood"
 
 Chắc các bạn cũng không lạ lẫm gì Go nữa, Go là một ngôn ngữ backend được phát triển bởi Google.
 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/h46t11xlnx_blob)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/h46t11xlnx_blob" class="img-center">
+
 Một vài điểm mạnh nổi bật trong Go:
 - Static binaries
 - Concurrency
@@ -17,7 +18,7 @@ Trong đó concurrency được coi là first class citizen. Trong bài này mì
 
 # Một ít kiến thức căn bản
 
-###Phân biệt parallelism và concurrenncy:
+### Phân biệt parallelism và concurrenncy:
 Cả hai đều là cách để thực hiện multi processing programming, nhưng:
 
 - Concurrency là việc handle nhiều thứ cùng một lúc. Thử tưởng tượng bạn đang tung bóng và bắt bóng trên tay, bạn có 4 quả bóng, nhưng một lúc bạn chỉ có thể tung một quả bằng tay phải, giữ một quả bằng tay trái và hai quả còn lại ở trên bầu trời.
@@ -28,7 +29,7 @@ Tại mỗi thời điểm chỉ có một process được thực thi, vì vậ
  - Preemptive scheduling là khi các process sẵn sàng nhường quyền điều khiển CPU.
  - Cooperative(hay còn gọi là non premptive): Khi một process được điều phối CPU, nó sẽ sử dụng CPU cho đến khi nó giải phóng(bằng cách kết thúc hoặc qua next state).
 
-###Phân biệt process, thread và goroutine:
+### Phân biệt process, thread và goroutine:
 
 -  Process hiểu nôm na là một tiến trình xử lý của máy tính. Thuở xa xưa, máy tính chỉ chạy được một process trong một thời điểm. Khi multi processing ra đời, [time sharing model](https://en.wikipedia.org/wiki/Time-sharing) trở nên phổ biến. Mỗi process sẽ cung cấp resource riêng biệt để thực hiện chương trình.
 
@@ -47,7 +48,8 @@ Tuy vậy, cost để context switching giữa các thread còn khá cao, vì m�
 -  Goroutine lấy ý tưởng của thread và phát huy. Thử tìm hiểu xem sao.
 
 # Goroutine
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/fy6g2oyuqm_blob)
+
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/fy6g2oyuqm_blob" class="img-center">
 
 Các bạn hiểu nôm na một goroutine là một function mà có thể chạy đồng thời với các function khác. Các goroutine share nhau address space.
 Không khác gì thread nhỉ?
@@ -73,7 +75,8 @@ Có 3 model cơ bản trong multi threading. Đó là N:1, 1:1 và N:M
 # Go scheduler
 
 Trong Go scheduler sẽ có 3 thực thể. M P G
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/7tt20uu4gq_blob)
+
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/7tt20uu4gq_blob" class="img-center">
 
 M đại diện cho OS thread.(machine)
 
@@ -81,7 +84,7 @@ P là processor, nó sẽ giữ context tương ứng với một OS thread.
 
 G là goroutine.
 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/ndz0upn5ir_blob)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/ndz0upn5ir_blob" class="img-center">
 
 
 Trên hình trên chúng ta thấy được 2 M, có giữ context P, mỗi cái sẽ chạy một goroutine G (Lưu ý là để chạy goroutine, M phải giữ context P)
@@ -92,7 +95,8 @@ M và G hẳn là đã rõ rồi, cơ mà P ở đây vai trò là gì? Tại sa
 
 Nó sẽ rơi vào trường hợp sau đây, đó là khi thread đang chạy bị block. Nguyên nhân gây ra block có thể là IO hay GC.
 Ví dụ khi gọi system call, ghi file chẳng hạn, thì trong thời gian block, go scheduler sẽ pass context này cho thread khác để có thể tiếp tục chạy.
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/djsaexr43v_blob)
+
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/djsaexr43v_blob" class="img-center">
 
 Như hình trên, M0 đang handling một cái syscall, điều này làm những goroutine trong running queue sẽ ko được schedule, nên Go scheduler sẽ pass context P cho M1. Lưu ý là M1 có thể được tạo ra trong lúc đó, hoặc lấy ra từ thread cache.
 
@@ -104,7 +108,8 @@ Khi M0 làm xong syscall, thì nó sẽ:
  Để khởi tạo goroutine chỉ mất tầm 4KB trong khi bạn cần 4Mb để có thể tạo ra một thread.
 
  Lí do là Goroutine có thể tăng/giảm kích thước khi cần trong lúc runtime(dynamic allocation).
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/5nb52d9gmf_blob)
+
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/5nb52d9gmf_blob" class="img-center">
 
 Go sử dụng segmented stacks. Cho các bạn chưa biết thì segmented stacks là loại stack mà cho phép tăng/giảm stack space tùy vào mục đích sử dụng, và quá trình này thực hiện ở runtime.
 
@@ -122,7 +127,8 @@ Goroutine sẽ bị block trong các trường hợp sau:
 Khi một goroutine bị block, nó sẽ không khiến thread mà nó đang nằm trên bị ảnh hưởng theo.
 
 Nếu các bạn để ý, goroutines giống như một lớp abstraction của thread. Nó giúp programmer không phải làm việc trực tiếp với threads, và OS thì hầu như không biết sự tồn tại của go routine.
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/mhqrpx4uab_Screen%20Shot%202017-03-28%20at%205.06.11%20PM.png)
+
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/mhqrpx4uab_Screen%20Shot%202017-03-28%20at%205.06.11%20PM.png" class="img-center">
 
 Cái mà OS thấy chỉ đơn giản là một process ở user level xin được cấp phát và chạy multiple threads. Việc schedule goroutines trên threads tất tần tật chỉ đơn thuần là việc xây dựng một môi trường ảo ở runtime.
 

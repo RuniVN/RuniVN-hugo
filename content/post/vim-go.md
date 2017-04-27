@@ -99,7 +99,7 @@ title = "Hướng dẫn sử dụng Vim để code Go"
 ## Hướng dẫn sử dụng căn bản.
   Vim là một chương trình soạn thảo được build lần đầu tiên trên UNIX, dùng để làm việc trên môi trường ko có UI. Lúc này bàn phím chưa cũng khá thô sơ, nên các bước di chuyển trên vim hơi khác với bình thường:
 
-<img src="http://vimsheet.com/images/hjkl.png" class="img-center">
+<img src="/post/img/hjkl.png" class="img-center">
 
   Các bạn có thể tự tập luyện việc sử dụng các phím này bằng [vim game](http://vim-adventures.com/)
 
@@ -172,12 +172,12 @@ title = "Hướng dẫn sử dụng Vim để code Go"
   Trong số này:
 
   -- nerdtree: Giúp bạn tổ chức folder trong vim dưới dạng cây thư mục, dễ dàng hơn trong việc mở file và folder. Sau khi cài đặt:
-  {{% img src="/images/2015-10-16-nerdtree.png" class="third right" %}}
+<img src="/post/img/nerdtree.png" class="img-center">
 
   Nhờ plugin của git, các bạn có thể biết file nào đang sửa, thêm mới và chưa được commit.
 
   -- neocomplete: Hỗ trợ auto complete trong vim.
-   {{% img src="/images/2015-10-16-neocomplete.png" class="third right" %}}
+<img src="/post/img/neocomplete.png" class="img-center">
 
   -- autopair: Plugin giúp bạn gõ nhanh khi sử dụng các dấu " ( ' [ < bằng cách thêm vào thành một pair "" () '' [] <>
 
