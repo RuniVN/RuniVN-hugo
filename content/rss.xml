@@ -1,0 +1,133 @@
+<rss version="2.0">
+<channel>
+<title>
+<![CDATA[ Runi Blog ]]>
+</title>
+<description>
+<![CDATA[ Runi ]]>
+</description>
+<link>http://runikitkat.com.com</link>
+<item>
+<guid>
+http://runikitkat.com/post/vim-go/
+</guid>
+<title>
+<![CDATA[
+Hướng dẫn sử dụng Vim để code Go
+]]>
+</title>
+<link>
+http://runikitkat.com/post/vim-go/
+</link>
+<description>
+<![CDATA[
+Đọc thêm tại: http://runikitkat.com/post/vim-go/
+]]>
+</description>
+<pubDate>Fri, 04 Sep 2015 19:55:56 -0700</pubDate>
+</item>
+<item>
+<guid>
+http://runikitkat.com/post/interface-go/
+</guid>
+<title>
+<![CDATA[ Giới thiệu Interface trong Golang ]]>
+</title>
+<link>
+http://runikitkat.com/post/interface-go/
+</link>
+<description>
+<![CDATA[
+Đọc thêm tại: http://runikitkat.com/post/interface-go/
+]]>
+</description>
+<pubDate>Thu, 10 Sep 2015 17:55:14 -0700</pubDate>
+</item>
+<item>
+<guid>
+http://runikitkat.com/post/go-selenium/
+</guid>
+<title>
+<![CDATA[ Dùng selenium để crawl dữ liệu với Golang ]]>
+</title>
+<link>
+http://runikitkat.com/post/go-selenium/
+</link>
+<description>
+<![CDATA[
+Đọc thêm tại: http://runikitkat.com/post/go-selenium/
+]]>
+</description>
+<pubDate>Fri, 26 Feb 2016 20:45:24 -0700</pubDate>
+</item>
+<item>
+<guid>http://runikitkat.com/post/go-facebook-bot/</guid>
+<title>
+<![CDATA[ Viết một facebook messenger bot đơn giản cùng Go và ngrok ]]>
+</title>
+<link>http://runikitkat.com/post/go-facebook-bot/</link>
+<description>
+<![CDATA[
+Đọc thêm tại: http://runikitkat.com/post/go-facebook-bot/
+]]>
+</description>
+<pubDate>Thu, 18 Aug 2016 13:33:18 -0700</pubDate>
+</item>
+<item>
+<guid>
+http://runikitkat.com/post/rust-mir/
+</guid>
+<title>
+<![CDATA[ MIR - Sự tinh túy của chú cua bé nhỏ Rust ]]>
+</title>
+<link>
+http://runikitkat.com/post/rust-mir/
+</link>
+<description>
+<![CDATA[
+Đọc thêm tại: http://runikitkat.com/post/rust-mir/
+]]>
+</description>
+<pubDate>Sat, 4 Feb 2017 23:28:41 -0700</pubDate>
+</item>
+<item>
+<guid>http://runikitkat.com/post/go-routine-under-the-hood/</guid>
+<title>
+<![CDATA[ Go routine under the hood ]]>
+</title>
+<link>http://runikitkat.com/post/go-routine-under-the-hood/</link>
+<description>
+<![CDATA[
+Đọc thêm tại: http://runikitkat.com/post/go-routine-under-the-hood/
+]]>
+</description>
+<pubDate>Tue, 28 Mar 2017 14:44:22 -0700</pubDate>
+</item>
+<item>
+<guid>http://runikitkat.com/post/graphql/</guid>
+<title>
+<![CDATA[ Single endpoint với GraphQL (backend Go) ]]>
+</title>
+<link>http://runikitkat.com/post/graphql/</link>
+<description>
+<![CDATA[
+Đọc thêm tại: http://runikitkat.com/post/graphql/
+]]>
+</description>
+<pubDate>Sun, 23 Jul 2017 19:55:56 -0700</pubDate>
+</item>
+<item>
+<guid>http://runikitkat.com/post/biet-dau-la-dinh-menh/</guid>
+<title>
+<![CDATA[ Biết đâu là định mệnh ]]>
+</title>
+<link>http://runikitkat.com/post/biet-dau-la-dinh-menh/</link>
+<description>
+<![CDATA[
+Đọc thêm tại: http://runikitkat.com/post/biet-dau-la-dinh-menh/
+]]>
+</description>
+<pubDate>Thu, 27 Jul 2017 19:55:56 -0700</pubDate>
+</item>
+</channel>
+</rss>
