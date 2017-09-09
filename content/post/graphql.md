@@ -7,7 +7,7 @@ title = "Single endpoint với GraphQL (backend Go)"
 
 GraphQL được tạo ra bởi Facebook vào năm 2012, production ready năm 2016 nhưng hiện tại vẫn khá ít công ty và developers Việt Nam sử dụng. Nhân tiện có một khách hàng muốn xài GraphQL nên team mình đã apply vào luôn. Sau khi xài xong thì thấy khá kute phô mai que nên muốn share ít kiến thức tìm hiểu được.
 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/lq5y5mw0h0_image.png)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/lq5y5mw0h0_image.png" class="img-center">
 # Problem
 
 Để hiểu được concreate problem của GraphQL thì phải nói tới REST.
@@ -21,7 +21,8 @@ Citizen của REST là "resource". Khi bạn muốn retreive dữ liệu resourc
 
 Một điểm quan trọng đó là REST stateless và cacheable.
 
-![alt text](https://s3-ap-southeast-1.amazonaws.com/kipalog.com/gggntnv456_image.png)
+<img src="https://s3-ap-southeast-1.amazonaws.com/kipalog.com/gggntnv456_image.png" class="img-center">
+
 ## REST drawbacks
 
 Ứng dụng mình chia làm 2 phần, backend là Go và frontend là React. Mình bắt đầu gặp những vấn đề khi ứng dụng grows:
